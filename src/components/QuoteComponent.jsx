@@ -29,7 +29,7 @@ export const QuoteComponent = ({ quote }) => {
   return (
     <QuoteContainer>
         <q className="quote__text">{quote.content}</q>
-        <h4 className="quote__author"> - {quote.author} - </h4>
+        <p className="quote__author">-{quote.author}-</p>
     </QuoteContainer>
   )
 }

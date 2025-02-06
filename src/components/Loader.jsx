@@ -1,7 +1,11 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
+const l27 = keyframes`
+   100% {transform: rotate(1turn)}
+`
 const LoaderContainer = styled.div`
+
   --d:22px;
   width: 4px;
   height: 4px;
@@ -15,8 +19,12 @@ const LoaderContainer = styled.div`
     calc(-1*var(--d))     calc(0*var(--d))     0 4px,
     calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
     calc(0*var(--d))      calc(-1*var(--d))    0 6px;
-  animation: l27 1s infinite steps(8);
+  animation: ${l27} 1s infinite steps(8);
 
+
+
+
+  
 ` 
 
 
