@@ -47,7 +47,7 @@ const Container = styled.section`
         flex-direction: column;
         gap: 2rem;
         line-height: 1.5;
-        font-family: "Roboto", serif;
+        font-size: 1.2rem;
     }
     .quotes__title{
         font-size: 3rem;
@@ -102,8 +102,9 @@ export const Quotes = ({ onTheme }) => {
                 <p className="quotes__description">{description}</p>
 
             </header>
+            
             {
-                quote?<QuoteComponent quote={quote} />:<Loader/>
+               quote?<QuoteComponent quote={quote} />:<Loader/>
             }
 
         </Container>

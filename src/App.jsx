@@ -8,6 +8,8 @@ export const App = () => {
 
     const [theme, setTheme] = useState(light)
 
+    const onLine = navigator.onLine
+
     const handleTheme = ( res )=>{
 
         if(res){
@@ -21,7 +23,13 @@ export const App = () => {
   
   return (
     <ThemeProvider theme={theme} >
-        <Quotes onTheme={ handleTheme } />
+        
+        {
+
+            onLine?<Quotes onTheme={ handleTheme } />:<h2>Offline, check your internet connection</h2>
+       
+        }
+        
     </ThemeProvider>
   )
 }

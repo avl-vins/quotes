@@ -10,8 +10,8 @@ gap: 1rem;
 
 .quote__text{
     
-  font-family: "Concert One", serif;
-  font-weight: 400;
+  font-family: "Roboto", serif;
+  font-weight: 700;
   font-style: normal;
   font-size: 1.75rem;
 
@@ -20,6 +20,7 @@ gap: 1rem;
 .quote__author{
     
     text-align: center;
+    font-weight: 500;
   
   }
     
